@@ -1,0 +1,97 @@
+{
+
+    "workbench.colorTheme": "Dark Sea Green",
+
+    "cmake.pinnedCommands": [
+
+        "workbench.action.tasks.configureTaskRunner",
+
+        "workbench.action.tasks.runTask"
+
+    ],
+
+    "editor.wordWrap": "on",
+
+    "chat.editor.wordWrap": "on",
+
+    "terminal.integrated.cursorStyle": "line",
+
+    "editor.tokenColorCustomizations": {
+
+        "textMateRules": [
+
+            {
+
+                "scope": "string.quoted.docstring", // use string.quoted.docstring.multi.python if you only want it to apply for python.
+
+                "settings": {
+
+                "foreground": "#ff5e00", // TODO
+
+                }
+
+            }
+
+        ],
+
+        "[Dark Sea Green]": {
+
+            "comments": "#adadad",
+
+            "strings": "#b34bf8"
+
+        }
+
+    },
+
+    "terminal.integrated.fontFamily": "CaskaydiaCove NF",
+    "files.associations": {
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "random": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "numbers": "cpp",
+        "ostream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "typeinfo": "cpp"
+    },
+
+ 
+
+}
