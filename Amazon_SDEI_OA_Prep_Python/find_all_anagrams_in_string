@@ -1,0 +1,34 @@
+'''
+Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order.
+
+An anagram is a permutation of a word, meaning p's letters must appear in s in any order but consecutively.
+
+Example 1:
+Input: s = "cbaebabacd", p = "abc"
+Output: [0, 6]
+Explanation: 
+The substring "cba" at index `0` is an anagram of "abc".
+The substring "bac" at index `6` is an anagram of "abc".
+
+'''
+
+
+def anagramFinder(s, p):
+    char_index = []
+    left = 0
+    max_length = 0
+    windowSize = len(p)
+    baseWord = set(p)
+    verifyAnagram = set()
+
+    for right in range(len(s)):
+        verifyAnagram.add(s[left:right+windowSize])
+        if(baseWord == verifyAnagram):
+            #found anagram subset
+            char_index.append(left)
+        left += windowSize
+        right += windowSize
+    print(char_index)
+
+anagramFinder("cbaebabacd", "abc")
+

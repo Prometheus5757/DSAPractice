@@ -1,0 +1,22 @@
+'''
+Problem: Two Sum
+Given an array of integers nums and an integer target, return the indices of the two numbers such that they add up to target.
+'''
+
+def mySum(nums, target):
+    nums.sort()
+    leftPtr = 0
+    rightPtr = -1
+    sumNotFound = True
+    while sumNotFound:
+        if(nums[leftPtr] + nums[rightPtr] < target):
+            leftPtr += 1
+        elif(nums[leftPtr] + nums[rightPtr] > target):
+            rightPtr -= 1
+        else:
+            sumNotFound = False
+    
+    calcrightIndex = leftP
+    return [leftPtr, rightPtr]
+
+print(mySum([2,7,11,15], 13))
